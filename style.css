@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    padding: 20px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgba(194, 220, 221, 1)
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.main-container {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.community {
+    background-color: white;
+    padding: 30px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.subscription {
+    background-color: rgba(44, 178, 179, 1);
+    padding: 30px;
+}
+
+.why-us {
+    background-color: rgba(74, 190, 189, 255);
+    padding: 30px;
+}
+
+.community h2 {
+    color: rgba(60, 156, 146, 1);
+    margin-bottom: 15px;
+}
+
+.community h3 {
+    color: rgba(201, 216, 126, 1);
+    margin-bottom: 10px;
+}
+
+.community p {
+    margin-bottom: 5px;
+    color: rgba(133, 147, 171, 1);
+}
+
+.subscription h3 {
+    margin-bottom: 10px;
+}
+
+.subscription p {
+    margin-top: 10px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#price {
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+#price-frequency {
+    color: rgba(34, 102, 102, 1);
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+#sign-up-btn {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    background-color: rgba(191, 223, 50, 1);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 6px 3px rgba(47, 43, 43, 0.1);
+}
+
+#sign-up-btn:hover {
+    cursor: pointer;
+    background-color: rgba(176, 187, 129, 0.5);
+}
+
+
+.why-us ul {
+    padding: 0;
+    list-style: none;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    margin-top: 17px;
+}
+
+.why-us li {
+    margin-bottom: 4px;
+}
+
+
+
+@media (min-width: 576px) {
+  .main-container {
+    width: 550px;
+    height: 400px;
+  }
+
+  .community {
+    height: 45%
+  }
+
+  .bottom-container {
+    flex-direction: row;
+    height: 55%;
+  }
+
+  .why-us, .subscription {
+    flex-basis: 50%;
+  }
+}
